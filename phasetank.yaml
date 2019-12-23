@@ -1,0 +1,17 @@
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - bowtie=1
+    #  - samtools
+    #  - perl-getopt-long
+    #  - perl-math-cdf
+    #  - viennarna
+    #  - perl-net-ssleay
+    #  - fastqc
+    #  - multiqc
+    #  - r
+    #  - r-ggplot2
+    #  - r-viridis
+    #  - r-tidyverse
+    #  - r-dplyr
