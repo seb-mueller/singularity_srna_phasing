@@ -22,18 +22,18 @@ export ANACONDA_HOME=/opt/conda
 wget 'https://sourceforge.net/projects/phasetank/files/PhaseTank_V1.0_BETE/PhaseTank_v1.0.tar.gz/download'
 tar xvzf download
 cd PhaseTank_v1.0
-PATH=$PATH:PhaseTank_v1.0
+PATH=$PATH:PhaseTank_v1.0:$PATH
 
 # apt-get update
 
 export PATH=/opt/conda/bin:$PATH
 # conda update conda
-conda config --set ssl_verify false
-# conda config --set ssl_verify /opt/conda/ssl/cacert.pem
+# conda config --set ssl_verify false
+conda config --set ssl_verify /opt/conda/ssl/cacert.pem
 conda env update -n base --file /phasetank.yaml
-conda init bash
-bash
-conda activate base
+# conda init bash
+# bash
+# conda activate base
 
 conda clean --index-cache --tarballs --packages --yes
 # pip install snakemake
